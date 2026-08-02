@@ -65,10 +65,10 @@ b {
 	font-weight: 700;
 }
 a {
-	color: var(--accent);
+	color: rgb(var(--black));
 }
 a:hover {
-	color: var(--accent);
+	color: rgb(var(--black));
 }
 p {
 	margin-bottom: 1em;
@@ -92,9 +92,11 @@ img {
 	border-radius: 8px;
 }
 code {
-	padding: 2px 5px;
+	padding: 0 0.2em;
 	background-color: rgb(var(--gray-light));
 	border-radius: 2px;
+	font-size: 0.9em;
+	line-height: inherit;
 }
 pre {
 	padding: 1.5em;

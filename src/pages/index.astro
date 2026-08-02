@@ -20,35 +20,28 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 					<p>My quest to be the hare.</p>
 				</div>
 			</section>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
-				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
-				website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to
-				<a href="https://docs.astro.build/">read the docs</a>
-				or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out
-				<a href="https://github.com/Charca/astro-blog-template">astro-blog-template</a>
-				by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+
+			<section class="article-header">
+				<h2 class="article-title">Introduction</h2>
+				<div class="article-meta">
+					<span>English</span>
+					<time datetime="2026-08-02">02 August 2026</time>
+				</div>
+        <p>Welcome to my collection of thoughts and word in the world of hardware engineering and trading systems. While originally a software enjoyer, my profound joy found in hardware systems has much taken the first spot of engineering love in my rankings, kicking C++ to a sore second, and Minecraft to a terrible third.</p>
+			</section>
+
+      <p>
+      In a pleasant conversation with a hardware engineer in the industry, I learned of a blog: <a href="www.sniperinmahwah.com">Sniper in Mahwah</a>.
+      It struct me that such people exist of literary capability, as well as fascination with the world of trading systems. The minimalist elegance to the site, as well as francophonic attributes were quite pleasing, and as such much of the structure has been naively copied in some emulation <code>fork</code>'d of admiration.
+
+      Other sites such as <a href="ceramichacker.com">Ceramic Hacker</a> and <a href="https://ocamlstreet.gitbook.io/hardcaml-wiki">Hari's Hardcaml Wiki</a> served as demonstrations of a young professional's passion in the hardware world, naturally leading to mine own - (particularly relating to niche topics such as <a href="https://hardcaml.org/">hardcaml</a> or trading systems). A <a href="https://www.linkedin.com/in/gregory-stitt-92ab1819/">professor</a> of mine's <a href="https://stitt-hub.com/">blog</a> also served as yet another enticement, and to be great, one must follow the greats.
+
+      </p>
+
+      <p>
+      Why <b>Carteret</b>? <a href="https://en.wikipedia.org/wiki/Mahwah,_New_Jersey">Mahwah, New Jersey</a> hosts NYSEs primary cluster, while a short hour drive away <a href="https://en.wikipedia.org/wiki/Carteret,_New_Jersey">Carteret</a> hosts NASDAQs equivalent.
+      </p>
+
 		</main>
 		<Footer />
 	</body>
@@ -80,5 +73,21 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 	.landing-quote p {
 		margin: 0;
+	}
+
+	.article-title {
+		margin-bottom: 0.15rem;
+	}
+
+	.article-meta {
+		margin-bottom: 1.5rem;
+		color: rgb(var(--gray));
+		font-size: 0.8rem;
+		line-height: 1.25;
+	}
+
+	.article-meta span,
+	.article-meta time {
+		display: block;
 	}
 </style>
