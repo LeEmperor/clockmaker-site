@@ -10,10 +10,16 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 	</head>
-	<body>
+	<body class="home-page">
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
+			<section class="landing-intro">
+				<h1 class="landing-title">CLOCKMAKER IN CARTERET && FRIENDS</h1>
+				<div class="landing-quote">
+					<p>"Celer esto, primus esto, sed recte fac."</p>
+					<p>My quest to be the hare.</p>
+				</div>
+			</section>
 			<p>
 				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This template
 				serves as a lightweight, minimally-styled starting point for anyone looking to build a personal
@@ -47,3 +53,32 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.home-page {
+		background: #fff;
+	}
+
+	.landing-intro {
+		margin-bottom: 3rem;
+		text-align: center;
+	}
+
+	.landing-title {
+		font-size: clamp(0.9rem, 4vw, 2rem);
+		text-align: center;
+		white-space: nowrap;
+	}
+
+	.landing-quote {
+		margin: 0 auto;
+		color: rgb(var(--black));
+		font-size: 1rem;
+		line-height: 1.4;
+		text-align: center;
+	}
+
+	.landing-quote p {
+		margin: 0;
+	}
+</style>
